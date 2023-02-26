@@ -1,6 +1,8 @@
 import {useEffect, useState} from "react";
-import {tvService} from "../../services/TvService";
+
+
 import {AboutTv} from "../AboutTv/AboutTv";
+import {tvService} from "../../services";
 
 const AboutTvs = ({poId}) => {
 const [data,setData]=useState([])

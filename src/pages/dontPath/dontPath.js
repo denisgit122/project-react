@@ -1,4 +1,3 @@
-import css from './dontPath.module.css'
 import './dontPath.css'
 
 const DontPath = () => {

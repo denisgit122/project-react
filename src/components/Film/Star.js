@@ -24,7 +24,7 @@ const re=vote_average
 })
 return (
         <div>
-<div> {rat}</div>
+           <div> {rat}</div>
         </div>
 
 

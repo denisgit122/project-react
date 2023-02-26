@@ -6,9 +6,9 @@ import '../CSS/sw.css'
 
 const PopularFilm = ({film}) => {
     const {title,poster_path}=film
-const popular = filmServices.getPopular();
-   popular.then(({data})=>data);
+    const popular = filmServices.getPopular();
 
+   popular.then(({data})=>data);
 
     return (
   <div>

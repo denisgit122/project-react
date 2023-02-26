@@ -1,16 +1,10 @@
-import {SearchByGenre, SearchFilm} from "../../components";
-
+import { SearchFilm} from "../../components";
 
 const SearchFilmPage = () => {
 
-
 return (
   <div>
-      {/*<SearchByGenre/>*/}
       <SearchFilm/>
-
-
-
   </div>
 );
 };

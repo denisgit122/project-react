@@ -1,7 +1,8 @@
-import css from './switch.module.css'
-import '../CSS/sw.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons"
+
+import css from './switch.module.css'
+import '../CSS/sw.css'
 
 const Switch = () => {
 

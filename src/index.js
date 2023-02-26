@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
+import {setUppStore} from "./redux";
 
 import App from './App';
-import {setUppStore} from "./redux";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const store=setUppStore()

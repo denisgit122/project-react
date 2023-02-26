@@ -2,9 +2,7 @@ import { FaInstagram,FaGithub,FaGoogle } from "react-icons/fa";
 
 import css from './Footer.module.css'
 
-
 const Footer = () => {
-
 
     return (
   <div className={css.footer}>

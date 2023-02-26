@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
-import {AboutTvs} from "../../components/AboutTvs/AboutTvs";
+
+import {AboutTvs} from "../../components";
 
 const AboutTv = () => {
     const {id}=useParams()

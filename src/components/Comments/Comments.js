@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import { useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 import  css from './imputComment.module.css'
@@ -10,7 +10,7 @@ const Comments = () => {
     const navigate=useNavigate()
 const comments = () => {
    setInpVal(comment.current.value)
-    // confirm(comment.current.value)
+
     if (window.confirm (`Do you really want to add comment: ${comment.current.value}?` )){
         alert('successfully added')
     }else {

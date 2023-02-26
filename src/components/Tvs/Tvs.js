@@ -1,5 +1,4 @@
 import {useSearchParams} from "react-router-dom";
-import {activ} from "../../redux/tvSlice/tvSlice";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -10,9 +9,9 @@ import cs from "../CSS/buttonNav.module.css";
 import css from '../Films/films.module.css'
 import csc from '../SearchFilm/searchFilm.module.css'
 import cc from './tvs.module.css'
-import {tvService} from "../../services/TvService";
 import {Loading} from "../Loading/Loading";
-
+import {tvService} from "../../services";
+import {activ} from "../../redux/tvSlice/tvSlice";
 
 
 const Tvs = () => {
@@ -31,15 +30,13 @@ const Tvs = () => {
         const search= await tvService.searchTv(searchKey,1 )
         const discover=  dispatch(activ.getAllTV({page:query.get('page')}))
         const type=searchKey ? search: discover
+
       if (searchKey){const {data:{results}}= await type
           setTv(results)
+      } else {}
 
-      }
-
-    else {}
-setLoad(false)
-
-    };
+        setLoad(false)
+ };
 
 
 

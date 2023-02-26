@@ -1,7 +1,8 @@
 import {combineReducers} from "redux";
-import {filmReducer} from "./filmSlice/filmSlice";
 import {configureStore} from "@reduxjs/toolkit";
+
 import {tvReducer} from "./tvSlice/tvSlice";
+import {filmReducer} from "./filmSlice/filmSlice";
 
 const root=combineReducers({
     films:filmReducer,

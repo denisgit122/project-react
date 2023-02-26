@@ -3,8 +3,7 @@ import { Route, Routes} from "react-router-dom";
 import {DontPath, FilmPage, SearchFilmPage} from "./pages";
 import {HeaderLayout} from "./Layout";
 import {AboutPage} from "./pages/About/AboutPage";
-import {Footer} from "./components";
-import {Tvs} from "./components/Tvs/Tvs";
+import {Footer, Tvs} from "./components";
 import {AboutTv} from "./pages/About/AboutTv";
 
 

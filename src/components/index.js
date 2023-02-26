@@ -11,7 +11,6 @@ export * from './Film/Film'
 export * from './CSS/sw.css'
 export * from './CSS/buttonNav.module.css'
 export * from './Comments/Comments'
-
 export * from './Footer/Footer'
 export * from './Tvs/Tvs'
 export * from './Tv/Tv'

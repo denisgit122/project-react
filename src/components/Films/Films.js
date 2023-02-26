@@ -1,13 +1,12 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {useSearchParams} from "react-router-dom";
-
 import {action} from "../../redux";
+
 import css from './films.module.css'
 import cs from '../CSS/buttonNav.module.css'
 import {Film} from "../Film/Film";
 import {Loading} from "../Loading/Loading";
-
 
 const Films = () => {
 

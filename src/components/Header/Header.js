@@ -3,7 +3,6 @@ import {NavLink, useNavigate} from "react-router-dom";
 import css from './Header.module.css'
 import {Switch} from "../Switch/Switch";
 
-
 const Header = () => {
     const navigae=useNavigate()
     return (
@@ -14,7 +13,6 @@ const Header = () => {
                     <img onClick={()=>navigae('/')} className={css.user} src="https://th.bing.com/th/id/R.17bfdd845df1440c98a5cfcdeedd633f?rik=u%2bTNThBSlaIVZA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_155117.png&ehk=egteo%2fJ8IV6AkqZ2Nlmota2csGEWyhjQbas775TyeHo%3d&risl=&pid=ImgRaw&r=0" alt="user"/>
                 </div>
             </div>
-
 
 
             <div className={css.ul}>
@@ -37,12 +35,6 @@ const Header = () => {
                 </div>
 
             </div>
-
-            {/*<div className={css.path}>*/}
-
-
-            {/*</div>*/}
-
 
             <div>
                 <Switch/>

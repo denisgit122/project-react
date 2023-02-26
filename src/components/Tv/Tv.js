@@ -5,7 +5,6 @@ import {urls} from "../../configs/urls";
 import {Star} from "../Film/Star";
 import cs from "./Tv.module.css";
 
-
 const Tv = ({tv}) => {
   const {id,name,poster_path,vote_average,first_air_date}=tv
   const navigate=useNavigate()

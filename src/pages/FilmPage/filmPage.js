@@ -2,7 +2,6 @@ import {Films, PopulFilms} from "../../components";
 import './filmPage.css'
 import 'animate.css';
 
-
 const FilmPage = () => {
 return (
   <div>

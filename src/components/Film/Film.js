@@ -4,10 +4,6 @@ import { useNavigate} from "react-router-dom";
 import css from './film.module.css'
 import {urls} from "../../configs/urls";
 
-
-
-
-
 const Film = ({film}) => {
   const {id,original_title,poster_path,vote_average,release_date}=film
     const navigate=useNavigate()
@@ -43,9 +39,6 @@ return (
                                 <span>Read more</span>
                             </button>
                         </div>
-
-
-                        {/*<Link to={id.toString()}></Link>*/}
 
                     </div>
                 </div>

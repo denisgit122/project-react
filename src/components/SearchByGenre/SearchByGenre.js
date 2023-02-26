@@ -1,6 +1,5 @@
 import css from './searchGenre.module.css'
 
-
 const SearchByGenre = ({mov,defaultValue,value,onChange}) => {
 
     return (
@@ -9,7 +8,6 @@ const SearchByGenre = ({mov,defaultValue,value,onChange}) => {
           className={css.boxSelector}
           value={value}
           onChange={event => onChange(event.target.value)}
-          // onChange={}
           >
           <option value={''}>{defaultValue}</option>
               <option className={css.option}  value="28">Action</option>
@@ -20,8 +18,6 @@ const SearchByGenre = ({mov,defaultValue,value,onChange}) => {
               <option value="99">Documentary</option>
               <option value="18">Drama</option>
               <option value="10751">Family</option>
-
-
 
       </select>
   </div>

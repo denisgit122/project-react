@@ -1,9 +1,10 @@
-import css from "../AboutMovie/aboutMovie.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faStar} from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from "react-router-dom";
+
+import css from "../AboutMovie/aboutMovie.module.css";
 import {urls} from "../../configs/urls";
 import {Comments} from "../Comments/Comments";
-import {useNavigate} from "react-router-dom";
 
 const AboutTv = ({tv}) => {
     const {
