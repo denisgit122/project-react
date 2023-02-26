@@ -1,0 +1,35 @@
+.boxInp{
+    margin-left: 200px;
+    margin-top: 25px;
+    /*padding-bottom: 10px;*/
+
+}
+.inp {
+    margin-left: 140px;
+    position: absolute;
+    top: 103px;
+    background: none;
+    font-family: Broadway;
+    color:#5b5959;
+    font-size: 16px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    width: 620px;
+    height: 24px;
+
+}
+.form{
+margin-bottom: -5px;
+}
+.boxBut{
+    /*position: absolute;*/
+    margin-top: -14px;
+    margin-left: 260px;
+}
+.hr{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+
+}

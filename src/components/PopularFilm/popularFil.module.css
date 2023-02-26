@@ -1,0 +1,58 @@
+.slider{
+    margin-right: -230px;
+    margin-left: -30px;
+
+}
+.boxes {
+    width: 700px;
+    height: 570px;
+}
+.imp{
+    margin-top: 10px;
+    margin-left: 6.3%;
+    border-radius: 20px;
+    width:350px;
+    height:350px;
+    transition: 3s;
+    position: relative;
+
+}
+.slideContent{
+    position: relative;
+}
+.imp:hover{
+    /*transform: scale(1.1);*/
+}
+.led{
+    margin-left: 50px;
+    border: 1px solid beige;
+    width:400px;
+    height: 340px;
+    padding-bottom: 70px;
+    position:absolute;
+    border-radius: 20px;
+    transition: 3s;
+    margin-top: 40px;
+    align-items: center;
+
+}
+.led:hover{
+    margin-top: 30px;
+    transform: scale(1.1);
+    color: white;
+    border: 1px solid blueviolet;
+    -webkit-box-shadow: 0px 4px 27px -3px rgba(186,17,186,0.81);
+    -moz-box-shadow: 0px 4px 27px -3px rgba(186,17,186,0.81);
+    box-shadow: 0px 4px 27px -3px rgba(186,17,186,0.81);
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 35%;*/
+    margin-top: 20px;
+
+    font-family: "Century751 No2 BT";
+}
+
+

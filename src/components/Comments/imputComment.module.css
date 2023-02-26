@@ -1,0 +1,17 @@
+.inpComment{
+    margin-top: 14%;
+    width: 400px;
+    margin-left: 50px;
+
+}
+.comment{
+    width: 240px;
+    background: 100px;
+    height: 20px;
+}
+.button{
+
+    background: 100px;
+    height: 26px;
+    border: 1px solid black;
+}

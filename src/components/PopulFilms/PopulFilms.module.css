@@ -1,0 +1,32 @@
+.boxArrowRight{
+    z-index: 1;
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    background: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    border-radius: 10px 30px;
+    left: 91%;
+    top: 42%;
+}
+.faArrowRight{
+    color: #444343;
+}
+.boxArrowLeft{
+    z-index: 1;
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    background: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    border-radius: 10px 30px;
+    left: 3%;
+    top: 42%;
+}
+

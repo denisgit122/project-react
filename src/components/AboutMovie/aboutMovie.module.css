@@ -1,0 +1,69 @@
+
+.fon{
+    background: url("https://i.ytimg.com/vi/BlEFM-B2Nrw/maxresdefault.jpg");
+    width: 100vw;
+    height: 850px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.boxWithGenre{
+    margin-top: 25px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.boxWithTimeStar {
+    margin-left: -240px;
+    margin-top: 330px;
+    width: 200px;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.boxWithOverview{
+    width: 80%;
+    margin-top: -340px;
+}
+
+.spanw{
+    margin-right: 70px;
+    width: 80px;
+
+}
+.boxStyle{
+    top: 20px;
+    position: relative;
+    width: 76%;
+    overflow: inherit;
+}
+.margin {
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+}
+.hr{
+    text-align: center;
+    width: 450px;
+}
+.boxComments{
+    margin-top: 50px;
+    display: flex;
+    width: 780px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.backdrop_path{
+    width: 380px;
+    height: 200px;
+    margin-left: -70px;
+   margin-top: -20px;
+}
+.boxWithH2Com{
+    margin-top: -20px;
+}
