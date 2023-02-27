@@ -13,7 +13,7 @@ const AboutMovies = ({postId}) => {
 
     return (
         <div>
-            {/*{genres?genres.map(re=> console.log(re)):<h1>lox</h1>}*/}
+            {/*{genres?genres.map(re=> console.log(re)):<h1>er</h1>}*/}
             { <AboutMovie key={film.id} film={film}/> }
 
         </div>
