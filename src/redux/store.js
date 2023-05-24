@@ -1,15 +1,15 @@
 import {combineReducers} from "redux";
+import {carReducer} from "./slices/carSlices";
 import {configureStore} from "@reduxjs/toolkit";
 
-import {tvReducer} from "./tvSlice/tvSlice";
-import {filmReducer} from "./filmSlice/filmSlice";
-
-const root=combineReducers({
-    films:filmReducer,
-    tv:tvReducer
-
+const rootReducer = combineReducers({
+    cars: carReducer
 })
-const setUppStore =()=>configureStore({
-    reducer:root
+
+const setUpStore = () => configureStore({
+    reducer: rootReducer
 })
-export {setUppStore}
+
+export {
+    setUpStore
+}
