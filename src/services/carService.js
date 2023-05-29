@@ -1,10 +1,16 @@
-import {axiosService} from "./axiosService";
 import {urlsCar} from "../configs/urls";
+import axios from "axios";
 
 const carService = {
-    getAll: () => axiosService.get(urlsCar.cars.cars),
-    getById : (id) => axiosService.get(urlsCar.cars.byId(id))
+
+    getAll: () => axios.get(urlsCar.cars.cars),
+    getAllPriv: () => axios.get("/cars/car/filter"),
+
+    getById : (id) => axios.get(urlsCar.cars.byId(id)),
+    getByIdPriv : (id) => axios.get(urlsCar.cars.byIdPriv(id)),
+
 }
+
 export {
     carService
 }

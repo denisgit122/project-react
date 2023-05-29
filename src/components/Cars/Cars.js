@@ -1,20 +1,22 @@
-import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import {carAction} from "../../redux";
-import {carService} from "../../services";
+
+import {Car} from "../Car/Car";
+import css from '../Car/Car.module.css'
 
 const Cars = () => {
+
     const dispatch = useDispatch();
-    const {cars} = useSelector(state => state.cars);
+    const {cars} = useSelector(state => state.cars)
 
-    useEffect(() => {
-        // dispatch(carAction.getAll())
-        carService.getAll().then(({data})=> console.log(data))
-    },[dispatch])
-    // console.log(cars);
+    useEffect ( () => {
+        dispatch(carAction.getAll());
+    }, [dispatch]);
+
     return (
-  <div>
-
+  <div className={css.boxCar}>
+      {cars.map(car => <Car key={car._id} car={car}/>)}
 
   </div>
 );

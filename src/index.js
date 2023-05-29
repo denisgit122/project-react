@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
-
-import App from './App';
+import {unstable_HistoryRouter as BrowserRouter} from "react-router-dom";
 import {setUpStore} from "./redux";
 import {Provider} from "react-redux";
 
+import App from './App';
+import {history} from "./configs/urls";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = setUpStore()
 root.render(
     <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter history={history}>
             <App />
         </BrowserRouter>
     </Provider>

@@ -1,18 +1,19 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {carService} from "../../services";
+import {userService} from "../../services/userService";
 
 let initialState = {
-    cars: [],
-    car:[],
+    users: [],
+    user:[],
     errors: null,
     loading: null
 };
 const getAll = createAsyncThunk (
-    "carSlice/getAll",
+    "userSlice/getAll",
     async (_, thunkAPI)=>{
         try {
-            const {data} = await carService.getAll();
+            const {data} = await userService.getAll();
             return data
         }catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
@@ -20,10 +21,10 @@ const getAll = createAsyncThunk (
     }
 );
 const getById = createAsyncThunk (
-    "carSlice/getById",
-    async (carId, thunkAPI)=>{
+    "userSlice/getById",
+    async ({userId}, thunkAPI)=>{
         try {
-            const {data} = await carService.getById(carId);
+            const {data} = await userService.getById(userId);
             return data
         }catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
@@ -31,26 +32,26 @@ const getById = createAsyncThunk (
     }
 );
 
-const carSlice = createSlice({
-    name: "carSlice",
+const userSlice = createSlice({
+    name: "userSlice",
     initialState,
     reducers: {},
     extraReducers: {
         [getAll.fulfilled]: (state, action)=>{
-            state.cars = action.payload
+            state.users = action.payload
         },
         [getById.fulfilled]: (state, action)=>{
-            state.car = action.payload
+            state.user = action.payload
         },
     }
 })
-const {reducer: carReducer} = carSlice;
+const {reducer: userReducer} = userSlice;
 
-const carAction = {
+const userAction = {
     getAll,
     getById,
 }
 export {
-    carReducer,
-    carAction
+   userReducer,
+    userAction
 }

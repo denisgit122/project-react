@@ -1,0 +1,86 @@
+body{
+    background: azure;
+}
+.boxCar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.headBox {
+    border: none;
+    width: 30vw;
+    height: 45vh;
+    background: linear-gradient(silver, slategray, #587fc0);
+    border-radius: 3px;
+    margin-top: 60px;
+    background-size: 100% auto;
+    box-shadow: 0px 5px 10px 0px #b7bec7;
+}
+
+.headBox:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 3s infinite;
+    animation: pulse512 2s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(41, 150, 168, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 30px rgb(218 103 68 / 0%);
+    }
+}
+.aboutCar{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+.photoCar {
+    margin-top: -10px;
+    width: 23vw;
+    height: 29vh;
+}
+.desc{
+    color: #2a2a2a;
+    display: flex;
+    font-family: Century;
+}
+.mark{
+    margin: 15px 7px 0 10px;
+}
+.model{
+    font-size: 17px;
+    margin: 16px 5px 0 0;
+}
+.year{
+    color: #2a2a2a;
+    display: flex;
+    font-size: 20px;
+    margin: 10px 0 0 8vh;
+}
+.price{
+    margin: 0 0 0 48%;
+}
+.city{
+    font-size: 105%;
+    margin: 16px 0 0 24%;
+}
+.FaMapMarked{
+    color: rgba(7, 7, 7, 0.35);
+    background: none;
+}
+.favorites{
+    position: absolute;
+    margin: 10px;
+    font-size: 22px;
+}
+.re{
+   color: #ff006a;
+}
